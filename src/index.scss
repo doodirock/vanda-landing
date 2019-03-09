@@ -1,18 +1,41 @@
-.vanda-blue {
-  background-color: #138c8a;
+header {
+  height: 70px;
+  border-bottom: 1px solid #138c8a45;
 }
-body {
-  background-color: #1f1c1c;
-}
-
 .logo {
-  text-align: center;
-  padding-top: 20px;
+  padding-top: 5px;
+  margin: auto;
   img {
     width: 180px;
   }
 }
-
 .main {
-  padding-top: 40px;
+  padding-top: 65px;
+  height: 100%;
+}
+.boxer {
+  h1 {
+    font-weight: 200;
+    color: white;
+    span {
+      color: #138c8a;
+    }
+  }
+}
+.phone {
+  margin: 2.8rem 0 1.68rem 0;
+  img {
+    width: 100%;
+  }
+}
+footer {
+  background-color: #191717;
+  height: 65px;
+  span {
+    color: white;
+  }
+}
+///  Color change items
+.swap-bg {
+  background-color: #1f1c1c;
 }
