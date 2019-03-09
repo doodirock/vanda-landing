@@ -23,7 +23,7 @@
           <div class="col m6 s12">
             <div class="boxer">
               <h1 class="card-title">Text <span>IDEA</span><br> to 82632</h1>
-              <a class="waves-effect waves-light btn"><i class="material-icons left">wb_incandescent</i>Learn More</a>
+              <a class="waves-effect waves-light btn" href="https://vanda.solutions/text-message-center-sign-up"><i class="material-icons left">wb_incandescent</i>Learn More</a>
             </div>
           </div>
           <div class="col m6 s12">
@@ -50,6 +50,7 @@
     var socket = io();
     socket.on('sms', function (data) {
       console.log(data);
+      $('.sockets').html(data);
       $('body').addClass( "swap" );
     });
   </script>    
