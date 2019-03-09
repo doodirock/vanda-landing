@@ -1,0 +1,6 @@
+.test {
+  background-color: black; }
+  .test .test {
+    color: red; }
+  .test .testit {
+    color: blue; }
