@@ -1,3 +1,8 @@
 .logo {
   text-align: center;
   margin-top: 40px; }
+
+.main {
+  padding-top: 20px; }
+  .main .card-holder {
+    background-color: #138c8a; }
