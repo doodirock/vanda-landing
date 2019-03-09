@@ -5,7 +5,7 @@ var router = express.Router();
 router.get("/", function(req, res, next) {
   var io = req.app.get("socketio");
   let bodys = req.query;
-  console.log(bodys);
+  console.log(bodys.p2);
   io.emit("sms", "This is amazing");
   res.send("Nothing here for you");
 });
