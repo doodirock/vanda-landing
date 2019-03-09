@@ -9,8 +9,10 @@ router.get("/", function(req, res, next) {
 });
 
 router.post("/", function(req, res) {
+  var io = req.app.get("socketio");
   let bodys = req.query;
   console.log(bodys);
+  io.emit("sms", "This is amazing");
   res.send("respond with a resource");
 });
 

@@ -19,6 +19,7 @@ header {
     color: #138c8a; }
 
 .phone {
+  position: relative;
   margin: 2.8rem 0 1.68rem 0; }
   .phone img {
     width: 100%; }
@@ -31,3 +32,47 @@ footer {
 
 .swap-bg {
   background-color: #1f1c1c; }
+
+.msg_bubble-holder {
+  display: none; }
+  .msg_bubble-holder div {
+    max-width: 255px;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+    line-height: 24px; }
+    .msg_bubble-holder div:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .msg_bubble-holder .msg_bubble {
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    background: #0b93f6;
+    border-radius: 25px;
+    float: right; }
+    .msg_bubble-holder .msg_bubble p {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline; }
+
+.swap .swap-bg {
+  background-color: white;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear; }
+
+.swap .boxer h1 {
+  color: #191717;
+  -webkit-transition: color 2000ms linear;
+  -ms-transition: color 2000ms linear;
+  transition: color 2000ms linear; }
+
+.swap .msg_bubble-holder {
+  position: absolute;
+  display: block;
+  top: 110px;
+  right: 50px; }
