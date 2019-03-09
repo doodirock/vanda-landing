@@ -5,7 +5,7 @@ module.exports = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   entry: ["./src/index.scss"],
   output: {
-    path: path.resolve(__dirname, "assets")
+    path: path.resolve(__dirname, "public")
   },
   module: {
     rules: [
