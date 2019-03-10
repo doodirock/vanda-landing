@@ -53,6 +53,9 @@ header {
         color: #138c8a;
       }
     }
+    .button-hide {
+      display: none;
+    }
   }
   .phone {
     position: relative;
@@ -162,17 +165,18 @@ footer {
   }
   .boxer {
     h1 {
-      color: #191717;
-      -webkit-transition: color 2000ms linear;
-      -ms-transition: color 2000ms linear;
-      transition: color 2000ms linear;
+      display: none;
+    }
+    .button-hide {
+      display: inline-block;
+      margin-top: 40px;
     }
   }
   .phone {
     img {
       top: 0;
-      -webkit-transition: 0.3s top;
-      transition: 0.9s top;
+      -webkit-transition: 0.5s top;
+      transition: 0.5s top;
     }
   }
   .msg_bubble-holder {

@@ -39,6 +39,8 @@ header {
       line-height: 122%; }
       .main .boxer h1 span {
         color: #138c8a; }
+    .main .boxer .button-hide {
+      display: none; }
   .main .phone {
     position: relative;
     margin: 40px 200px; }
@@ -108,15 +110,16 @@ footer {
   transition: background-color 1000ms linear; }
 
 .swap .boxer h1 {
-  color: #191717;
-  -webkit-transition: color 2000ms linear;
-  -ms-transition: color 2000ms linear;
-  transition: color 2000ms linear; }
+  display: none; }
+
+.swap .boxer .button-hide {
+  display: inline-block;
+  margin-top: 40px; }
 
 .swap .phone img {
   top: 0;
-  -webkit-transition: 0.3s top;
-  transition: 0.9s top; }
+  -webkit-transition: 0.5s top;
+  transition: 0.5s top; }
 
 .swap .msg_bubble-holder {
   z-index: 40;
