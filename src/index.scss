@@ -7,15 +7,19 @@
 header {
   height: 70px;
   border-bottom: 1px solid #138c8a45;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 40;
+  z-index: 999999999;
   text-transform: uppercase;
   background-color: transparent;
   -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
+  &.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
 }
 .logo {
   padding-top: 5px;

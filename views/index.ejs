@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="valign-wrapper">
+      <header class="valign-wrapper navscroll">
         <div class="container">
           <div class="logo"><a href="https://vanda.solutions/"><img src="https://vandasms.herokuapp.com/img/logo.png"></a></div>
         </div>
@@ -27,7 +27,7 @@
           </video>
           <div class="boxer">
             <h1 class="card-title">Hungry for new Ideas? Text <span>IDEA</span> to 82632</h1>
-            <a class="waves-effect waves-light btn-large button-hide" href="https://vanda.solutions/text-message-center-sign-up"><i class="material-icons left">wb_incandescent</i>Learn More</a>
+            <a class="waves-effect waves-light btn-large button-hide zoomIn animated" href="https://vanda.solutions/text-message-center-sign-up"><i class="material-icons left">wb_incandescent</i>Learn More</a>
           </div>
           <div class="phone">
             <div class="msg_bubble-holder">
@@ -51,6 +51,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <script src="/js/base.js"></script>
   <script>
     var socket = io();
     socket.on('sms', function (data) {
