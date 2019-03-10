@@ -1,30 +1,54 @@
+.wrapper {
+  position: relative; }
+
 header {
   height: 70px;
-  border-bottom: 1px solid #138c8a45; }
+  border-bottom: 1px solid #138c8a45;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  text-transform: uppercase;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in; }
 
 .logo {
   padding-top: 5px;
   margin: auto; }
   .logo img {
-    width: 180px; }
+    width: 160px; }
 
 .main {
-  padding-top: 65px;
-  height: 100%; }
-
-.boxer h1 {
-  font-weight: 200;
-  color: white; }
-  .boxer h1 span {
-    color: #138c8a; }
-
-.phone {
-  position: relative;
-  margin: 2.8rem 0 1.68rem 0; }
-  .phone img {
-    width: 100%; }
+  padding-top: 70px;
+  min-height: 660px;
+  max-height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, #231437 0%, #2c385e 50%, #1aa59aa6 100%); }
+  .main video {
+    display: none; }
+  .main .boxer {
+    position: relative;
+    text-align: center; }
+    .main .boxer h1 {
+      font-size: 3.5rem;
+      font-weight: 100;
+      color: white;
+      margin: 2.8rem 4em 1.68rem 4em;
+      line-height: 122%; }
+      .main .boxer h1 span {
+        color: #138c8a; }
+  .main .phone {
+    position: relative;
+    margin: 40px 200px; }
+    .main .phone img {
+      width: 100%;
+      top: 400px;
+      position: absolute; }
 
 footer {
+  position: relative;
   background-color: #191717;
   height: 65px; }
   footer span {
@@ -59,6 +83,26 @@ footer {
       font: inherit;
       vertical-align: baseline; }
 
+.swap .main {
+  background-image: none; }
+
+.swap video {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transform: none;
+  transform: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center top;
+  background-size: cover;
+  z-index: -1;
+  /*to edit the opacity effect change the percentage below */
+  filter: opacity(10%); }
+
 .swap .swap-bg {
   background-color: white;
   -webkit-transition: background-color 1000ms linear;
@@ -71,7 +115,13 @@ footer {
   -ms-transition: color 2000ms linear;
   transition: color 2000ms linear; }
 
+.swap .phone img {
+  top: 0;
+  -webkit-transition: 0.3s top;
+  transition: 0.9s top; }
+
 .swap .msg_bubble-holder {
+  z-index: 40;
   position: absolute;
   display: block;
   top: 110px;
