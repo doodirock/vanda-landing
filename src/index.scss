@@ -27,6 +27,7 @@ header {
 
 // Main container
 .main {
+  position: relative;
   padding-top: 70px;
   //   min-height: 660px;
   //   max-height: 100vh;
@@ -67,6 +68,11 @@ header {
       position: absolute;
     }
   }
+}
+
+// Step 2
+.step_two {
+  display: none;
 }
 
 // Footer
@@ -142,6 +148,13 @@ footer {
 .swap {
   .main {
     background-image: none;
+  }
+  .step_two {
+    display: block;
+    position: relative;
+    padding-top: 70px;
+    height: 100vh;
+    overflow: hidden;
   }
   video {
     display: block;

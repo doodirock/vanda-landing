@@ -5,7 +5,7 @@ var router = express.Router();
 router.get("/", function(req, res, next) {
   var io = req.app.get("socketio");
   let bodys = req.query;
-  console.log(bodys.p2);
+  //console.log(bodys.p2);
   io.emit("sms", bodys.p2);
   res.send("Nothing here for you");
 });
@@ -13,7 +13,7 @@ router.get("/", function(req, res, next) {
 router.post("/", function(req, res, next) {
   var io = req.app.get("socketio");
   let bodys = req.query;
-  console.log(bodys);
+  //console.log(bodys);
   io.emit("sms", "This is amazing");
   res.send("respond with a resource");
 });

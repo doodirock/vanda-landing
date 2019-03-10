@@ -21,6 +21,7 @@ header {
     width: 160px; }
 
 .main {
+  position: relative;
   padding-top: 70px;
   height: 100vh;
   overflow: hidden;
@@ -47,6 +48,9 @@ header {
       width: 100%;
       top: 600px;
       position: absolute; }
+
+.step_two {
+  display: none; }
 
 footer {
   position: relative;
@@ -86,6 +90,13 @@ footer {
 
 .swap .main {
   background-image: none; }
+
+.swap .step_two {
+  display: block;
+  position: relative;
+  padding-top: 70px;
+  height: 100vh;
+  overflow: hidden; }
 
 .swap video {
   display: block;
