@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "webpack --mode production",
+    "watch": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

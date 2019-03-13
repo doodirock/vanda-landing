@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  watch: true,
+  watch: false,
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   entry: ["./src/index.scss"],
   output: {
